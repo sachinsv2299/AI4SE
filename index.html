@@ -162,7 +162,7 @@
                     <div class="flex items-center space-x-6">
                         <a href="#about" class="text-text-muted hover:text-iith-gold transition-colors">About</a>
                         <a href="#program" class="text-text-muted hover:text-iith-gold transition-colors">Program Schedule</a>
-                        <a href="#sessions" class="text-text-muted hover:text-iith-gold transition-colors">Thematic Sessions</a>
+                        <!-- <a href="#sessions" class="text-text-muted hover:text-iith-gold transition-colors">Thematic Sessions</a> -->
                         <a href="#committee" class="text-text-muted hover:text-iith-gold transition-colors">Committee</a>
                         <a href="#logistics" class="text-text-muted hover:text-iith-gold transition-colors">Venue & Contact</a>
                     </div>
@@ -540,17 +540,8 @@
                                             <p class="text-sm text-text-base">Prof. Saswata Bhattacharya & Prof. Bhabani S. Nayak</p>
                                         </div>
                                         <div class="text-xs">
-                                            <p class="font-semibold text-iith-gold uppercase tracking-wider">Potential Speakers</p>
-                                            <div class="text-sm text-text-base mt-1 space-y-2">
-                                                <p><strong class="font-semibold">Academia:</strong> Prof. Somnath Bhowmick (IITK), Prof. Sai Gautam Gopalakrishnan (IISc)</p>
-                                                <div>
-                                                    <p><strong class="font-semibold">Industry (TCS Research):</strong> Dr. B. P. Gautham, Dr. Gerald Tennyson</p>
-                                                    <span class="text-xs text-iith-teal block italic mt-0.5">Topic: TCS PreMAP, an AI platform for materials process optimization.</span>
-                                                </div>
-                                                <div>
-                                                    <p><strong class="font-semibold">Govt. Lab (DMRL):</strong> Dr. R. Balamuralikrishnan, Dr. R. Sankarasubramanian</p>
-                                                </div>
-                                            </div>
+                                            <p class="font-semibold text-iith-gold uppercase tracking-wider">Speakers</p>
+                                            <p class="text-sm text-text-base mt-1 italic">To be announced.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -676,7 +667,12 @@
                                                         <i class="fa-solid fa-user-circle"></i> Profile
                                                     </button>
                                                 </div>
-                                                <p class="pt-1.5"><strong class="font-semibold">Dr. Viju Ravichandran</strong> (MathWorks)</p>
+                                                <div class="flex items-center justify-between gap-3 pt-1.5">
+                                                    <p><strong class="font-semibold">Dr. Viju Ravichandran</strong> (MathWorks)</p>
+                                                    <button onclick="openModal('vijuRavichandranProfile')" class="text-[10px] font-bold bg-iith-accent/10 text-iith-accent hover:bg-iith-accent/20 px-2 py-1 rounded-md transition-colors flex-shrink-0">
+                                                        <i class="fa-solid fa-user-circle"></i> Profile
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -946,68 +942,68 @@
                 </h4>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Maunendra</span>
-                        <span class="text-[10px] text-slate-500">CS & Maths Track</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Maunendra S. Desarkar</span>
+                        <span class="text-[10px] text-slate-500">Dept. of CSE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Sandipan</span>
-                        <span class="text-[10px] text-slate-500">Physics & AI</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Sandipan Dandapat</span>
+                        <span class="text-[10px] text-slate-500">Dept. of EE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Saurabh</span>
-                        <span class="text-[10px] text-slate-500">Physics & AI</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Saurabh Sandilya</span>
+                        <span class="text-[10px] text-slate-500">Dept. of Physics</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Anupam</span>
-                        <span class="text-[10px] text-slate-500">Physics & AI</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Anupam Gupta</span>
+                        <span class="text-[10px] text-slate-500">Dept. of Physics</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Sangkha Borah</span>
-                        <span class="text-[10px] text-slate-500">Quantum Systems</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Sangkha Borah</span>
+                        <span class="text-[10px] text-slate-500">Dept. of Physics</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Saranya</span>
-                        <span class="text-[10px] text-slate-500">Quantum Systems</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Saranya Ghosh</span>
+                        <span class="text-[10px] text-slate-500">Dept. of Physics</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Saswata</span>
-                        <span class="text-[10px] text-slate-500">Advanced Materials</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Saswata Bhattacharya</span>
+                        <span class="text-[10px] text-slate-500">Dept. of MSME</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Bhabani</span>
-                        <span class="text-[10px] text-slate-500">Advanced Materials</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Bhabani S. Nayak</span>
+                        <span class="text-[10px] text-slate-500">Dept. of MSME</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Lopa</span>
-                        <span class="text-[10px] text-slate-500">AI Diagnostics</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Lopa Mandal</span>
+                        <span class="text-[10px] text-slate-500">Dept. of BME</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Abhishek</span>
-                        <span class="text-[10px] text-slate-500">AI Diagnostics</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Abhishek Appaji</span>
+                        <span class="text-[10px] text-slate-500">Dept. of BME</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Nagarajan</span>
-                        <span class="text-[10px] text-slate-500">AI Diagnostics</span>
+                        <span class="block text-xs font-semibold text-text-base">Dr. Nagarajan Ganapathy</span>
+                        <span class="text-[10px] text-slate-500">Dept. of BME</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Venkatesham</span>
-                        <span class="text-[10px] text-slate-500">Robotics & Physical AI</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. B. Venkatesham</span>
+                        <span class="text-[10px] text-slate-500">Dept. of MAE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Prashant</span>
-                        <span class="text-[10px] text-slate-500">Robotics & Physical AI</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Prashant Kumar</span>
+                        <span class="text-[10px] text-slate-500">Dept. of MAE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Satish</span>
-                        <span class="text-[10px] text-slate-500">Climate Dynamics</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Satish Kumar</span>
+                        <span class="text-[10px] text-slate-500">Dept. of CE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Anamitra</span>
-                        <span class="text-[10px] text-slate-500">Climate Dynamics</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Anamitra Roy</span>
+                        <span class="text-[10px] text-slate-500">Dept. of CE</span>
                     </div>
                     <div class="p-3 bg-iith-navy/60 rounded-xl border border-border-base hover:border-slate-800 text-center">
-                        <span class="block text-xs font-semibold text-text-base">Kirti Sahu</span>
-                        <span class="text-[10px] text-slate-500">Complex Fluids & Materials</span>
+                        <span class="block text-xs font-semibold text-text-base">Prof. Kirti Chandra Sahu</span>
+                        <span class="text-[10px] text-slate-500">Dept. of CHE</span>
                     </div>
                 </div>
             </div>
@@ -1194,6 +1190,37 @@
             <div class="flex flex-wrap items-center justify-center gap-4 p-5 border-t border-border-base bg-iith-navy/50 rounded-b-2xl">
                 <a href="mailto:murali200i@gmail.com" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
                     <i class="fa-solid fa-envelope"></i> Contact via Email
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dr. Viju Ravichandran Profile Modal -->
+    <div id="vijuRavichandranProfile" class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden" onclick="closeModal('vijuRavichandranProfile')">
+        <div class="bg-iith-slate border border-border-base rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="flex items-start justify-between p-5 border-b border-border-base">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 rounded-full bg-iith-navy flex items-center justify-center flex-shrink-0 border border-border-base">
+                        <i class="fa-solid fa-user-tie text-3xl text-iith-accent"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-text-base">Dr. Viju Ravichandran</h3>
+                        <p class="text-sm text-iith-gold font-semibold">MathWorks</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('vijuRavichandranProfile')" class="text-text-muted hover:text-text-base transition-colors">
+                    <i class="fa-solid fa-times text-2xl"></i>
+                </button>
+            </div>
+            <!-- Modal Content -->
+            <div class="p-6 space-y-4 overflow-y-auto modal-content text-sm text-text-muted leading-relaxed">
+                <p class="italic">Profile details for Dr. Viju Ravichandran are coming soon.</p>
+            </div>
+            <!-- Modal Footer -->
+            <div class="flex flex-wrap items-center justify-center gap-4 p-5 border-t border-border-base bg-iith-navy/50 rounded-b-2xl">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-globe"></i> Company Website
                 </a>
             </div>
         </div>
