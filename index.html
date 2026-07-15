@@ -60,6 +60,13 @@
         .animate-glow {
             animation: button-glow 3s ease-in-out infinite;
         }
+        @keyframes ring-pulse {
+            0% { box-shadow: 0 0 0 0px var(--color-iith-gold); }
+            100% { box-shadow: 0 0 0 12px rgba(217,119,6, 0); }
+        }
+        .animate-ring {
+            animation: ring-pulse 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
         /* Custom styles for break cards in light mode, themed by day */
         .light .day1-break {
             background-color: #fef3c7; /* amber-100 */
@@ -215,7 +222,20 @@
                 
                 <!-- Hero Core Info -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <span class="inline-flex items-center gap-2 bg-iith-slate border border-border-base rounded-full px-4 py-1.5 text-xs sm:text-sm text-text-muted font-semibold shadow-inner">
+                    <!-- Logos -->
+                    <div class="flex justify-center lg:justify-start items-center gap-5">
+                        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+                            <!-- NOTE: Replace with your actual logo path -->
+                            <img src="./iith_logo.png" alt="IIT Hyderabad Logo" class="relative z-10 w-full h-full object-contain rounded-full bg-white p-1">
+                            <div class="absolute inset-0 rounded-full animate-ring"></div>
+                        </div>
+                        <div class="relative w-20 h-20 sm:w-24 sm:h-24">
+                            <!-- NOTE: Replace with your actual logo path -->
+                            <img src="./tlc_logo.png" alt="Teaching and Learning Centre IITH Logo" class="relative z-10 w-full h-full object-contain rounded-full bg-white p-1">
+                            <div class="absolute inset-0 rounded-full animate-ring"></div>
+                        </div>
+                    </div>
+                    <span class="inline-flex items-center gap-2 bg-iith-slate border border-border-base rounded-full px-4 py-1.5 text-xs sm:text-sm text-text-muted font-semibold shadow-inner mt-4">
                         <span class="flex h-2.5 w-2.5 relative">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
@@ -604,8 +624,11 @@
                                         <div class="text-xs">
                                             <p class="font-semibold text-iith-gold uppercase tracking-wider">Speakers</p>
                                             <div class="space-y-1.5 text-sm text-text-base mt-1">
-                                                <p><strong class="font-semibold">Yogesh Patil</strong> (CEO, Skymet Weather Services Pvt Ltd, AI-Powered Weather Intelligence)</p>
-                                                <p><strong class="font-semibold">Mallikarjun Kukunuri</strong> (Co-Founder and CEO, Niruthi Climate & Eco-Systems)</p>
+                                                <div>
+                                                    <p><strong class="font-semibold">Yogesh Patil</strong> (CEO, Skymet Weather Services Pvt Ltd)</p>
+                                                    <span class="text-xs text-iith-teal block italic mt-0.5">"AI-Powered Weather Intelligence"</span>
+                                                </div>
+                                                <p class="pt-1"><strong class="font-semibold">Mallikarjun Kukunuri</strong> (Co-Founder and CEO, Niruthi Climate & Eco-Systems)</p>
                                                 <div>
                                                     <div class="flex items-center gap-2">
                                                         <strong class="font-semibold">Dr. Suyash Bire</strong>
