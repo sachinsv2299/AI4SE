@@ -534,7 +534,14 @@
                                         <div class="text-xs">
                                             <p class="font-semibold text-iith-gold uppercase tracking-wider">Speakers</p>
                                             <div class="space-y-3 text-sm text-text-base mt-1">
-                                                <p><strong class="font-semibold">Sachin Kumar</strong> (VC of QpiAI)</p>
+                                                <div class="flex items-center justify-between gap-3">
+                                                    <div>
+                                                        <p><strong class="font-semibold">Sachin Kumar</strong> (VP - AI Platforms & Solutions, QpiAI)</p>
+                                                    </div>
+                                                    <button onclick="openModal('sachinKumarProfile')" class="text-[10px] font-bold bg-iith-accent/10 text-iith-accent hover:bg-iith-accent/20 px-2 py-1 rounded-md transition-colors flex-shrink-0">
+                                                        <i class="fa-solid fa-user-circle"></i> View Profile
+                                                    </button>
+                                                </div>
                                                 <div class="flex items-start justify-between gap-3">
                                                     <div>
                                                         <p><strong class="font-semibold">Dr. Sangkha Borah</strong> (IITH)</p>
@@ -1256,6 +1263,48 @@
             <!-- Modal Footer -->
             <div class="flex flex-wrap items-center justify-center gap-4 p-5 border-t border-border-base bg-iith-navy/50 rounded-b-2xl">
                 <a href="#" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-globe"></i> Company Website
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sachin Kumar Profile Modal -->
+    <div id="sachinKumarProfile" class="fixed inset-0 z-[60] bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden" onclick="closeModal('sachinKumarProfile')">
+        <div class="bg-iith-slate border border-border-base rounded-2xl shadow-2xl w-full max-w-3xl max-h-[90vh] flex flex-col" onclick="event.stopPropagation()">
+            <!-- Modal Header -->
+            <div class="flex items-start justify-between p-5 border-b border-border-base">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 rounded-full bg-iith-navy flex items-center justify-center flex-shrink-0 border border-border-base">
+                        <i class="fa-solid fa-user-tie text-3xl text-iith-accent"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-text-base">Sachin Kumar</h3>
+                        <p class="text-sm text-iith-gold font-semibold">VP - AI Platforms & Solutions, QpiAI</p>
+                    </div>
+                </div>
+                <button onclick="closeModal('sachinKumarProfile')" class="text-text-muted hover:text-text-base transition-colors">
+                    <i class="fa-solid fa-times text-2xl"></i>
+                </button>
+            </div>
+            <!-- Modal Content -->
+            <div class="p-6 space-y-4 overflow-y-auto modal-content text-sm text-text-muted leading-relaxed">
+                <div class="bg-iith-navy/50 border border-border-base p-4 rounded-lg space-y-2">
+                    <p><strong class="text-text-base font-semibold">Education:</strong> B.Tech in Instrumentation and Control Engineering from the National Institute of Technology, Tiruchirappalli.</p>
+                    <p><strong class="text-text-base font-semibold">Specialized Coursework:</strong> Reinforcement Learning at IISc, Bengaluru.</p>
+                </div>
+                <p>Sachin Kumar is the Vice President of AI Platforms & Solutions at QpiAI, where he drives innovation in AI for Industry 4.0, Smart Cities, and Healthcare. He oversees the integration of AI across large-scale operational stacks to deliver production-ready solutions using QpiAI's AutoML and MLOps platform QpiAI Pro, and the domain-targeted agentic AI Platform, QpiAI Agent Hive.</p>
+                <p>With core expertise in deep learning, computer vision, and optimization for industrial use cases, his teams have earned recognition such as the NASSCOM AI Gamechangers of the Year Award and India winners / Future AI Pioneer recognition at the Asia Pacific Conference of German Business. Prior to QpiAI, Sachin worked as an Analytic Scientist at FICO and held roles at Fidelity Investments.</p>
+            </div>
+            <!-- Modal Footer -->
+            <div class="flex flex-wrap items-center justify-center gap-4 p-5 border-t border-border-base bg-iith-navy/50 rounded-b-2xl">
+                <a href="mailto:sachin@qpiai.tech" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+                <a href="https://www.linkedin.com/in/sachin-kumar-9a5032124/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://www.qpiai.tech/" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-text-muted hover:text-iith-gold transition-colors flex items-center gap-1.5">
                     <i class="fa-solid fa-globe"></i> Company Website
                 </a>
             </div>
